@@ -27,22 +27,22 @@ pip install -r requirements.txt
 # 4) Quick configuration
 Base URL
 
-Edita si es necesario en tus fixtures:
+Edit if necessary in your fixtures:
 
 UI: ui_tests/conftest.py
 
 API: api_tests/conftest.py
 
-**Valor por defecto:**
+**Default value:**
 
 https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod
 
-**Token de API**
+**API Token**
 
 Place it in `api_tests/conftest.py` or as an environment variable:
 
 
-**Authorization": "Basic VGVzdFVzZXI4MDQ6b1pHXn1ANzYvIWRx",**
+**Authorization": "Basic <token_provided>",**
 
   **"Content-Type": "application/json**
 
