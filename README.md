@@ -68,7 +68,7 @@ pytest ui_tests/tests/test_login.py::test_login_success:any_other
 
 **UI Tip:** for headless mode, add in ui_tests/conftest.py the Chrome option --headless=new.
 
-# 5) Postman (opcional)
+# 5) Postman Setup
 
 Create an Environment with:
 
