@@ -3,18 +3,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-def pytest_addoption(parser):
-    parser.addini("base_url", help="Base URL for the app")
-
 @pytest.fixture(scope="session")
-def base_url(pytestconfig):
-    return pytestconfig.getini("base_url")
+def base_url():
+    return "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod"
 
 @pytest.fixture
-def browser(base_url):
+def browser():
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
     driver.maximize_window()
-    driver.get(f"{base_url}/Account/LogIn")
     yield driver
     driver.quit()
+
