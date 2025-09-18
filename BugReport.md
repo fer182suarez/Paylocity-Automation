@@ -133,7 +133,7 @@ The application displays an HTTP 405 error page.
 The UI should show a clear message such as *"Invalid username or password"* or *"User does not exist"*.  
 
 **Evidence:**  
-![error](./evidence/api/images/ui-001-loginpage-error-405.png)
+![error](./evidence/ui/images/ui-001-loginpage-error-405.png)
 
 ## Bug ID: UI-002  
 **Title:** First name and last name displayed in reversed order in employee list  
@@ -159,7 +159,7 @@ In the employees list view, the fields `firstName` and `lastName` are swapped. T
 - "Last Name" column should display "Suarez".
 - 
 **Evidence:**  
-![reversed](./evidence/api/images/ui-002-values-reversed.png)
+![reversed](./evidence/ui/images/ui-002-values-reversed.png)
 
 
 ## Bug ID: UI-003  
@@ -190,4 +190,4 @@ When attempting to delete an employee, the confirmation dialog appears. After cl
 - The modal should close automatically after a successful delete.
 
 **Evidence:**  
-![empty](./evidence/api/images/ui-003-inactivity-dashboard-empty.png)
+![empty](./evidence/ui/images/ui-003-inactivity-dashboard-empty.png)
