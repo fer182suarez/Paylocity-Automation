@@ -7,6 +7,6 @@ def base_url():
 @pytest.fixture(scope="session")
 def headers():
     return {
-        "Authorization": "Basic VGVzdFVzZXI4MDQ6b1pHXn1ANzYvIWRx",  # pega el token de Postman
+        "Authorization": "Basic VGVzdFVzZXI4MDQ6b1pHXn1ANzYvIWRx",
         "Content-Type": "application/json"
     }
