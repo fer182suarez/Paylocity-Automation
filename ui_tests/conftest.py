@@ -1,3 +1,4 @@
+from selenium.webdriver.chrome.options import Options
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -15,6 +16,10 @@ def base_url():
 
 @pytest.fixture
 def browser():
+    options = Options()
+    options.add_argument("--headless=new")   # 👈 correr sin abrir ventana
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     # Launch Chrome
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
