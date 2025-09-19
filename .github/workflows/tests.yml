@@ -44,4 +44,4 @@ jobs:
       # 5. Run UI tests (headless)
       - name: Run UI tests
         run: |
-          pytest ui_tests/ -v --maxfail=1 --disable-warnings --headless
+          pytest ui_tests/ -v --maxfail=1 --disable-warnings
