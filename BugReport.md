@@ -4,10 +4,15 @@
 
 ## Bug ID: API-001
 **Title:** Gross salary calculated on an annual basis rather than by period  
+
 **Reported by:** Fernando Suarez
+
 **Priority:** P1 (High)
-**Status:** Open  
+
+**Status:** Open 
+
 **Assigned to:** Development Team  
+
 **Environment:** QA-Postman, Prod API `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod`
 
 **Description:**  
@@ -21,10 +26,12 @@ The API interprets the `salary` field as if it were annual, when according to th
 
 **Actual Result:**
 gross = 52000 (interpreted as annual salary).
+
 net - 51923 (calculation on annual salary).
 
 **Expected Result:**
 gross = 2000 (per period).
+
 net = 2000 – (1000 + 500*dependants)/26 ≈ 1923.08.
 
 **Evidence:**  
@@ -33,10 +40,15 @@ net = 2000 – (1000 + 500*dependants)/26 ≈ 1923.08.
 
 ## Bug ID: API-002 
 **Title:** Error 500 when querying deleted employee
+
 **Reported by:** Fernando Suarez
+
 **Priority:** P1 (High)
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA-Postman, Prod API `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod`
 
 **Description:**  
@@ -59,10 +71,15 @@ The API should return `404 Not Found` or `204 No Content` indicating that the re
 
 ## Bug ID: API-003
 **Title:** GET after DELETE returns 200 with empty body
+
 **Reported by:** Fernando Suarez
+
 **Priority:** P1 (High)
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA-Postman, Prod API `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod`
 
 **Description:**  
@@ -86,10 +103,15 @@ The API should return 404 Not Found or 204 No Content indicating that the resour
 
 ## Bug ID: API-004
 **Title:** Inconsistent naming: field `dependants` should be `dependents`. 
+
 **Reported by:** Fernando Suarez
+
 **Priority:** P3 (Medium)
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA-Postman, Prod API `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod`
 
 **Description:**  
@@ -112,10 +134,15 @@ The field should be named `dependents` (consistency with UI, documentation and c
 # UI BUGS
 ## Bug ID: UI-001  
 **Title:** Invalid login credentials return HTTP 405 instead of user-friendly error  
+
 **Reported by:** Fernando Suarez  
+
 **Priority:** P1 (High)  
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA – Web UI, Prod App `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/Login`  
 
 **Description:**  
@@ -137,10 +164,15 @@ The UI should show a clear message such as *"Invalid username or password"* or *
 
 ## Bug ID: UI-002  
 **Title:** First name and last name displayed in reversed order in employee list  
+
 **Reported by:** Fernando Suarez  
+
 **Priority:** P2 (Medium)  
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA – Web UI, Prod App  
 
 **Description:**  
@@ -164,10 +196,15 @@ In the employees list view, the fields `firstName` and `lastName` are swapped. T
 
 ## Bug ID: UI-003  
 **Title:** Delete employee fails intermittently after inactivity, leaving dashboard empty  
+
 **Reported by:** Fernando Suarez  
+
 **Priority:** P1 (High)  
+
 **Status:** Open  
+
 **Assigned to:** Development Team  
+
 **Environment:** QA – Web UI, Prod App `https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Benefits`  
 
 **Description:**  
